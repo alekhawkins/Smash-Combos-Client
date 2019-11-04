@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 
+import Navbar from './Navbar/Navbar';
+import Auth from './Auth/Auth';
+import Splash from './Splash/Splash';
+import Moves from './Splash/Moves/Moves'
+
 function App() {
+
+  const[sessionToken, setSessionToken] = useState(undefined);
+
+  const viewConductor = () => {
+    return sessionToken !== undefined ? <Moves token={sessionToken} /> : <Auth setSession={setSessionToken} />
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      {viewConductor()}
+      {/* <Moves /> */}
+      {/* <Auth  /> */}
     </div>
   );
 }

@@ -1,0 +1,14 @@
+#select{
+    margin-top: 1em;
+    border: none;
+    height: 20px;
+    width: 60px;
+    background-color: lightsteelblue;
+    color: white;
+    cursor: pointer;
+}
+table{
+    float: left;
+    border: solid 1px black;
+    margin: 1px;
+}
