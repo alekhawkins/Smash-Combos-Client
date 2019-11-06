@@ -52,14 +52,14 @@ const Auth = (props) => {
             }
         })
         .then(res => res.json())
-        .then(json => props.setSession(json.sessionToken))
+        .then(json => {props.setSession(json.sessionToken); localStorage.setItem('token', json.sessionToken)})
         .catch(err => console.log(err))
     }
 
     return(
 
         <div className="wrapper">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} updateToken={props.updateToken}>
             <h1>{title()}</h1>
             <label htmlFor='userName'>Username: </label>
             <br/>

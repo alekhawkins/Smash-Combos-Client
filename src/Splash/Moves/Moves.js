@@ -284,6 +284,7 @@ return (
     <div>
     {updateActive ? <UserMovesEdit token={props.token} fetchUserMoves={fetchUserMoves} movesToUpdate={movesToUpdate} updateOff={updateOff} /> : <></>}
     </div>
+    
 </div>
 )
     

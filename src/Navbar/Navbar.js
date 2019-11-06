@@ -6,7 +6,7 @@ import Smash from '../assets/Smash.png'
 const Navbar = (props) => {
     return(
         <div>
-            <nav>
+            <nav className="center">
                 <img src={Smash} id='Smash'/>
             </nav>
         </div>

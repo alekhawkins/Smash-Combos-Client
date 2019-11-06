@@ -3,8 +3,12 @@ import './Splash.css';
 import Moves from './Moves/Moves';
 import Characters from '../assets/smashCharacters.jpeg';
 import {Container, Row, Col} from 'reactstrap';
+import Auth from '../Auth/Auth';
 
 const Splash = (props) => {
+
+    console.log(props)
+
     return(
     <div>
         <Container>
@@ -17,6 +21,9 @@ const Splash = (props) => {
         <br />
         <br />
         <Moves token={props.token} />
+        <button onClick={() => props.setSession(undefined)}>
+            Logout
+        </button>
     </div>
     )
 }

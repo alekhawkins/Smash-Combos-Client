@@ -63,6 +63,7 @@ const UserMoves = (props) => {
             </div>
             }
         </tr>
+        
     </div>
     )
 }
