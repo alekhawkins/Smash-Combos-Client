@@ -1,5 +1,8 @@
 #Smash{
-    height: 80px;
+    height: 90px;
+    width: 70vw;
+    position: relative;
+    top: -50px;
 }
 
 nav{
@@ -7,5 +10,5 @@ nav{
     flex-direction: row;
     /* justify-content: space-between; */
     height: 14vh;
-    background-color: whitesmoke;
+    background-color: black;
 }

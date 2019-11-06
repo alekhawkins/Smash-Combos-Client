@@ -21,7 +21,7 @@ const Splash = (props) => {
         <br />
         <br />
         <Moves token={props.token} />
-        <button onClick={() => props.setSession(undefined)}>
+        <button className='logout' onClick={() => props.setSession(undefined)}>
             Logout
         </button>
     </div>
