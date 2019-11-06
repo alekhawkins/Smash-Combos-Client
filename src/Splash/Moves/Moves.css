@@ -44,3 +44,11 @@
     background: rgb(255,3,0);
     background: linear-gradient(90deg, rgba(255,3,0,1) 13%, rgba(251,186,19,1) 100%);
 }
+.id {
+    position: relative;
+    left: 60px;
+}
+.movesHeader {
+    position: relative;
+    right: 90px;
+}

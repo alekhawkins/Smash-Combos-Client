@@ -109,9 +109,9 @@ return (
         <table className='userMovesTable'>
             <tbody>
                 <tr style={{display: 'flex', justifyContent: 'space-around'}}>
-                <th>id</th>
-                <th>character</th>
-                <th>moves</th>
+                <th className="id">Id</th>
+                <th className="characterHeader">Character</th>
+                <th className="movesHeader">Moves</th>
                 </tr>
                 {UserMovesRows()}
             </tbody>
