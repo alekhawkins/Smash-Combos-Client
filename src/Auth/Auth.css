@@ -1,28 +1,40 @@
 input{
     border: none;
     border-radius: 3px;
-    background-color: #3333cc;
+    background-color: whitesmoke;
     height: 50px;
     width: 300px;
     margin-bottom: 1em;
     margin-top: 1em;
     font-size: 15px;
+    opacity: 90%;
 }
 input:focus{
     outline: none;
-    background-color: lightseagreen;
+    background-color: white;
     color: black;
+    opacity: 70%;
 }
 
-button {
+#authButton {
     margin-top: 1em;
+    margin-bottom: 1em;
     border: none;
     height: 50px;
     width: 200px;
-    background-color: lightsteelblue;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
     cursor: pointer;
+    opacity: 90%;
 }
 button:focus{
     outline-color: black;
+}
+
+.wrapper{
+    background-image: url('../assets//smashLogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    height: 86vh;
 }

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Auth.css';
+import APIURL from '../helpers/enviroment';
 
 const Auth = (props) => {
     const [userName, setUserName] = useState('');
@@ -34,7 +35,7 @@ const Auth = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        const url = login ? 'http://localhost:3000/auth/signin' : 'http://localhost:3000/auth/signup'
+        const url = login ? `${APIURL}/auth/signin` : `${APIURL}/auth/signup`
 
         const bodyObj = login ? {
             userName: userName,
@@ -56,7 +57,8 @@ const Auth = (props) => {
     }
 
     return(
-        <div>
+
+        <div className="wrapper">
             <form onSubmit={handleSubmit}>
             <h1>{title()}</h1>
             <label htmlFor='userName'>Username: </label>
@@ -67,9 +69,9 @@ const Auth = (props) => {
             <br/>
             <input type='text' id='password' value={password} onChange={ (e) => setPassword(e.target.value) }/>
             <br/>
-            <button onClick={logginToggle}>Login/Signup Toggle</button>
+            <button id="authButton" onClick={logginToggle}>Login/Signup Toggle</button>
             <br/>
-            <button type='submit'>Submit</button>
+            <button id="authButton" type='submit'>Submit</button>
             </form>
         </div>
     )

@@ -1,7 +1,6 @@
 import React from 'react';
 import './Navbar.css';
 
-import Logout from './Logout/Logout';
 import Smash from '../assets/Smash.png'
 
 const Navbar = (props) => {
@@ -9,7 +8,6 @@ const Navbar = (props) => {
         <div>
             <nav>
                 <img src={Smash} id='Smash'/>
-                <Logout />
             </nav>
         </div>
     )

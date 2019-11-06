@@ -11,7 +11,7 @@ function App() {
   const[sessionToken, setSessionToken] = useState(undefined);
 
   const viewConductor = () => {
-    return sessionToken !== undefined ? <Moves token={sessionToken} /> : <Auth setSession={setSessionToken} />
+    return sessionToken !== undefined ? <Splash token={sessionToken} /> : <Auth setSession={setSessionToken} />
   }
 
   return (

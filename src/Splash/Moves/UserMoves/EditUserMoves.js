@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import {Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody} from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import {Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody} from 'reactstrap';
 import APIURL from '../../../helpers/enviroment';
 
 
@@ -12,7 +13,7 @@ const UserMovesEdit = (props) => {
        fetch(`${APIURL}/moves/${props.movesToUpdate.id}`, {
            method: 'PUT',
            body: JSON.stringify(
-               {character: editCharacter, moves: editMoves}
+               {character: editCharacter, moves: [editMoves]}
            ),
             headers: new Headers ({
                 'Content-Type': 'application/json',
@@ -25,6 +26,7 @@ const UserMovesEdit = (props) => {
     }
 
     return(
+        <div>
         <Modal isOpen={true}>
             <ModalHeader>Log a Combo</ModalHeader>
             <ModalBody>
@@ -41,6 +43,7 @@ const UserMovesEdit = (props) => {
                 </Form>
             </ModalBody>
         </Modal>
+        </div>
     )
 }
 
