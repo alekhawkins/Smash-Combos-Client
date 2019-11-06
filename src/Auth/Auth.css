@@ -7,13 +7,13 @@ input{
     margin-bottom: 1em;
     margin-top: 1em;
     font-size: 15px;
-    opacity: 90%;
+    opacity: 0.9;
 }
 input:focus{
     outline: none;
     background-color: white;
     color: black;
-    opacity: 70%;
+    opacity: 0.7;
 }
 
 #authButton {
@@ -25,7 +25,7 @@ input:focus{
     background-color: whitesmoke;
     color: black;
     cursor: pointer;
-    opacity: 90%;
+    opacity: 0.9;
 }
 button:focus{
     outline-color: black;
