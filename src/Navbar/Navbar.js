@@ -7,7 +7,7 @@ const Navbar = (props) => {
     return(
         <div>
             <nav className="center">
-                <img src={Smash} id='Smash'/>
+                <img src={Smash} id='Smash' alt=''/>
             </nav>
         </div>
     )
