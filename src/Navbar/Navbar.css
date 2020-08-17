@@ -1,6 +1,7 @@
 #Smash{
     width: 17vw;
-    left: 5em;
+    left: 50%;
+    display: absolute;
 }
 
 nav{
